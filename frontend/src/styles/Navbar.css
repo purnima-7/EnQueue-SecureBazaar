@@ -1,0 +1,125 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.logoImg {
+  height: 45px;
+}
+
+.navContainer {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  border: 1px solid rgba(27, 26, 28, 0.13);
+  box-shadow: rgba(25, 26, 25, 0.05) 0px 0px 8px 0px;
+  margin: 12px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navUser {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.navUser img {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.options {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  z-index: 999;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 150px;
+}
+
+.options_link {
+  text-decoration: none;
+  color: black;
+  padding: 7px;
+}
+
+.options_link:hover {
+  display: flex;
+  justify-content: center;
+  padding: 7px;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+  transition: all ease 0.2s;
+}
+
+.nav_links {
+  font-size: 17px;
+  font-family: "gilroySemiBold";
+  text-decoration: none;
+  color: black;
+  transition: all ease-in-out 0.7s;
+}
+
+.nav_links:hover {
+  color: #e9304b;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+@media (max-width: 1250px) {
+  .navContainer {
+    width: 80%;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+  }
+  .nav_links {
+    display: none;
+  }
+
+  .navbar {
+    position: static;
+  }
+  .logoImg {
+    height: 35px;
+  }
+}

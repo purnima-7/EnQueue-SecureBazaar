@@ -1,0 +1,47 @@
+.orders {
+  display: flex;
+  justify-content: center;
+  color: #555;
+}
+
+.ordersContainer {
+  width: 1200px;
+  padding: 50px 20px;
+  height: 50vh;
+}
+
+.ordersTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orderContact {
+  height: 30px;
+}
+
+.orderContact:hover {
+  cursor: pointer;
+}
+
+.ordersContainer th {
+  background-color: white;
+}
+
+.ordersContainer td {
+  padding-left: 8px;
+}
+
+@media (max-width: 900px) {
+  .ordersContainer {
+    height: auto;
+  }
+  .ordersContainer tr {
+    background-color: #4e4e4e0f;
+    font-size: 14px;
+  }
+
+  .ordersContainer td {
+    padding-left: 4px;
+  }
+}

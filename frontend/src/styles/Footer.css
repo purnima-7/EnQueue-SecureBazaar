@@ -1,0 +1,52 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  color: black;
+  margin: 50px 0px;
+  background-color: white;
+}
+
+.footerContainer {
+  width: 1400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.top {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.top .footerItems {
+  display: flex;
+  gap: 20px;
+}
+
+.footerItems h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+}
+
+.bottom {
+  border-top: 1px solid black;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1250px) {
+  .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,232 @@
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register form {
+  width: 960px;
+  padding: 40px 0px;
+  display: flex;
+  gap: 120px;
+}
+
+.register h1 {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.register .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.register .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.register label {
+  color: black;
+  font-size: 18px;
+}
+
+.register input {
+  padding: 14px;
+  border: 1px solid rgb(216, 214, 214);
+  border-radius: 8px;
+}
+
+.register textarea {
+  padding: 14px;
+  border: 1px solid rgb(216, 214, 214);
+  max-width: 600px;
+  max-height: 500px;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.register button {
+  border: none;
+  padding: 14px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #000000;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all ease-in-out 0.5s;
+}
+
+.register button:hover {
+  background-color: #424242;
+  transition: all ease-in-out 0.3s;
+}
+
+.register .toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.register .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.register .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.register .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.register .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.register input:checked + .slider {
+  background-color: #000000;
+}
+
+.register input:focus + .slider {
+  box-shadow: 0 0 1px #000000;
+}
+
+.register input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.loginsecondLine {
+  font-size: 16px;
+  text-align: center;
+}
+
+.loginLine {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.loginLine a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #e9304b;
+  transition: all ease-in-out 0.7s;
+}
+
+.loginLine a:hover {
+  color: #000;
+  transition: all ease-in-out 0.3s;
+}
+
+.registerError {
+  background: #ffeaea;
+  color: #b00020;
+  border: 1px solid #ffb3b3;
+  padding: 14px 18px;
+  margin: 0px 300px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .register form {
+    width: 100%;
+    gap: 40px;
+    padding: 40px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .register form {
+    flex-direction: column;
+    width: 80%;
+    gap: 32px;
+    padding: 40px 10px;
+  }
+  .register .left,
+  .register .right {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .loginLine {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .registerError {
+    background: #ffeaea;
+    color: #b00020;
+    border: 1px solid #ffb3b3;
+    padding: 14px 18px;
+    margin: 0px 30px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .register form {
+    width: 80%;
+    padding: 20px 4px;
+    gap: 32px;
+  }
+  .register h1 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .register label {
+    font-size: 15px;
+  }
+  .register input,
+  .register textarea {
+    padding: 20px;
+    font-size: 15px;
+    max-width: 250px;
+  }
+  .register button {
+    padding: 10px;
+    font-size: 16px;
+  }
+}

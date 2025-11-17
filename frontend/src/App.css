@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+
+*::selection {
+  background: #000000;
+  color: white;
+}
+
+@font-face {
+  font-family: gilroy;
+  src: url(./assets/Poppins/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: gilroyBold;
+  src: url(./assets/Poppins/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: gilroySemiBold;
+  src: url(./assets/Poppins/Gilroy-SemiBold.ttf);
+}
+
+* {
+  font-family: gilroy;
+}
